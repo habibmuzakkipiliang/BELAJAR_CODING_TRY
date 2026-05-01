@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Latihan DOM JavaScript lagi</title>
+</head>
+
+<style>
+ .body {
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: aqua;
+  color: black;
+  line-height: 3.5em;
+ }
+
+ .header {
+  background-color: yellow;
+  color: black;
+  line-height: 3.5em;
+ }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<body class="body">
+ <header class="header p-5 mb-5">
+  <h1 align="center">Latihan DOM JavaScript lagi</h1>
+ </header>
+
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12" style="background-color: white;">
+
+    <img src="https://habibmuzakkipiliang.github.io/website_portofolio/Leonardo_Phoenix_Design_a_cuttingedge_logo_for_HM_that_embodie_0.jpg" alt="gambar_habib_muzakki_piliang" class="img-fluid rounded-circle rounded-5 img-thumbnail" width="250px" height="250px">
+
+
+    <div id="teks"></div>
+    <div id="judul"></div>
+    <script>
+     var judul = document.getElementById ("teks")
+     var teks = document.getElementById ("judul")
+
+     judul.innerHTML += "<br> <h2>Profil Habib Muzakki Piliang </h2>"
+
+     var nama  = "Habib Muzakki"
+     var panggil = "Habib"
+     var marga = "Piliang"
+     var kelas = "12 Agama"
+     var absen = 15
+     var sekolah = "MAN 2 KOTA SERANG"
+     var angkatan = "34 ASCENDRIA"
+     var coding = "HTML, CSS, JavaScript, dan Python"
+     var lomba = "Finalis OSN-K Informatika tahun 2025"
+     var darah = "B"
+     var tinggi = "170 cm"
+     var berat = "60 kg"
+     var fans = "JKT48, AKB48, Hearts2Hearts (H2H), Raintree"
+
+     var oshi = [
+     "<br> 1. Michie JKT48 (UTAMA)",
+     "<br> 2. Fritzy JKT48 (UTAMA)",
+     "<br> 3. Anindya JKT48 (UTAMA)",
+     "<br> 4. Christy JKT48 (UTAMA)",
+     "<br> 5. Carmen Hearts2Hearts (H2H) (UTAMA)",
+     "<br> 6. Freya JKT48",
+     "<br> 7. Olla JKT48",
+     "<br> 8. Jessi JKT48",
+     "<br> 9. Fiony JKT48",
+     "<br> 10. Muthe JKT48",
+     "<br> 11. Marsha JKT48",
+     "<br> 12. Eli JKT48",
+     "<br> 13. Mikaela JKT48",
+     "<br> 14. Yui Oguri (AKB48)",
+     "<br> 15. Endo Rino (Rain Tree)",
+     
+     ]
+
+     var detail = `
+     
+     <br>- Nama : ${nama}
+     <br>- Panggil : ${panggil}
+     <br>- Marga  : ${marga}
+     <br>- Kelas : ${kelas}
+     <br>- Absen : ${absen}
+     <br>- Sekolah : ${sekolah}
+     <br>- Angkatan : ${angkatan}
+     <br>- Coding : ${coding}
+     <br>- Lomba : ${lomba}
+     <br>- Darah : ${darah}
+     <br>- Tinggi badan : ${tinggi}
+     <br>- Berat badan : ${berat}
+     <br>- Fans : ${fans}
+     <br>- Oshi :
+     
+     `
+
+     document.write (detail)
+
+     for (b = 0; b < oshi.length; b++) {
+      document.write (oshi [b])
+     }
+
+    </script>
+    <hr>
+    <br>
+
+    <script>
+
+     document.write ("<h2> Operator dasar </h2>")
+
+     var x = 10
+     var y = 10
+
+     document.write ("<br> Tambah = ", x + y)
+     document.write ("<br> Kurang = ", x - y)
+     document.write ("<br> Kali = ", x * y)
+     document.write ("<br> Pangkat = ", x ** y)
+     document.write ("<br> Bagi = ", x / y)
+     document.write ("<br> Modulus = ", x % y)
+
+
+     document.write ("<hr>")
+
+
+     document.write ("<h2> Operator Perbandingan </h2>")
+
+     document.write ("<br> Hasil = ", x > y)
+     document.write ("<br> Hasil = ", x < y)
+     document.write ("<br> Hasil = ", x >= y)
+     document.write ("<br> Hasil = ", x <= y)
+     document.write ("<br> Hasil = ", x >= y)
+     document.write ("<br> Hasil = ", x == y)
+     document.write ("<br> Hasil = ", x != y)
+    </script>
+    <hr>
+    <br>
+
+
+    <script>
+     document.write ("<h2> Tipe data dasar Pemrograman </h2>")
+
+     var teks = "Halo Indonesia"
+     var angka = 12
+     var desimal = 34.2
+     var cek = true
+     var kosong = null
+     var array = [
+ 
+     "<br> 1. DOM JavaScript",
+     "<br> 2. Asyncronous JavaScript",
+     "<br> 3. API Handling JavaScript",
+     "<br> 4. Data Import JavaScript",
+     "<br> 5. OOP (Oriented Object Programming) JavaScript",
+
+     ]
+
+     document.write ("Teks = ", teks)
+     document.write ("<br> Angka = ", angka)
+     document.write ("<br> Desimal =", desimal)
+     document.write ("<br> Cek = ", cek)
+     document.write ("<br> Kosong =", kosong)
+     document.write ("<br> Array = ")
+
+     for (t = 0; t < array.length; t++) {
+      document.write (array [t])
+     }
+
+     document.write ("<hr>")
+     document.write ("<br>")
+
+
+     document.write ("<h2> Dictionary (Object) </h2>")
+
+     var objek = {
+      "nama" : "John Hortio Gates",
+      "asal" : "Amerika Serikat",
+      "usia" : "20 tahun",
+      "kerja" : "Programmer",
+      "coding" : "HTML, CSS, JavaScript dan Python",
+     }
+
+     document.write ("<br> Nama : ", objek ["nama"])
+
+     document.write ("<br> Asal : ", objek ["asal"])
+
+     document.write ("<br> Usia : ", objek ["usia"])
+
+     document.write ("<br> Kerja : ", objek ["kerja"])
+
+     document.write ("<br> Coding : ", objek ["coding"])
+
+
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="judul_up"></div>
+    <div id="tes_up"></div>
+
+    <script>
+     var tes = document.getElementById ("judul_up")
+     var ar = document.getElementById ("tes_up")
+
+     judul_up.innerHTML += "<h2> Percabangan dasar </h2>"
+
+     var a = 9
+
+     if (a > 5) {
+      tes_up.innerHTML += `Besar, nilai = ${a}`
+     }
+
+     else {
+      tes_up.innerHTML += `Kecil, nilai = ${a}`
+     }
+
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="a_1"></div>
+    <div id="b_2"></div>
+    <script>
+     var soft= document.getElementById ("a_1")
+     var hard = document.getElementById ("b_2")
+
+     a_1.innerHTML += "<h2> Percabangan dasar 2 </h2>"
+
+     var b = 3
+
+     if (b > 5) {
+      b_2.innerHTML += `Besar, nilai = ${b}`
+     }
+
+     else {
+      b_2.innerHTML += `Kecil, nilai = ${b}`
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="clan"></div>
+    <div id="node"></div>
+
+    <script>
+     var tes = document.getElementById ("clan")
+     var tes = document.getElementById ("node")
+
+     clan.innerHTML += "<h2> Percabangan lanjutan  </h2>"
+
+     var c = 10
+
+     if (c > 5) {
+      node.innerHTML += `Besar, nilai = ${c}`
+     }
+
+     else if (c < 5) {
+      node.innerHTML += `Kecil, nilai = ${c}`
+     }
+     
+     else {
+      node.innerHTML += `Sama saja, nilai = ${c}`
+     }
+
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="gun"></div>
+    <div id="dub"></div>
+
+    <script>
+     var gur = document.getElementById ("gun")
+     var gur = document.getElementById ("dub")
+
+     gun.innerHTML += "<h2> Percabangan Nested 1 </h2>"
+
+     var a = 10
+     var cek = true
+
+     if (cek) {
+      if (a > 5) {
+       dub.innerHTML += `Besar, nilai = ${a}`
+      }
+
+      else if (a < 5) {
+       dub.innerHTML += `Kecil, nilai = ${a}`
+      }
+     }
+
+     else {
+      dub.innerHTML += `Sama saja, nilai = ${a}`
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="tune"></div>
+    <div id="rus"></div>
+
+    <script>
+     var tes = document.getElementById ("tune")
+     var tes = document.getElementById ("rus")
+
+     tune.innerHTML += "<h2> Percabangan Nested 2 </h2>"
+
+     var f = 2
+     var cek = true
+
+     if (cek) {
+      if (f > 5) {
+       rus.innerHTML += `Besar, nilai = ${f}`
+      } 
+      
+      else {
+       rus.innerHTML += `Kecil, nilai = ${f}`
+      }
+     }
+
+     else {
+      rus.innerHTML += `Sama saja, nilai = ${f}`
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="fun"></div>
+    <div id="run"></div>
+
+    <script>
+        var tes = document.getElementById ("fun")
+        var tes = document.getElementById ("run")
+
+        run.innerHTML += "<h2> Percabangan Nested 1, Usia Produktif Manusia"
+
+        var usia = 19
+        var cek = true
+
+        if (cek) {
+            if ((usia >= 15) && (usia <= 64)) {
+                run.innerHTML += `Sudah mencapai usia produktif, usia = ${usia}`
+            }
+
+            else if (usia > 64) {
+                run.innerHTML += `Sudah lanjut usia, usia = ${usia}`
+            }
+
+            else {
+                run.innerHTML += `Belum mencapai usia produktif, usia = ${usia}`
+            }
+        }
+
+        else {
+            run.innerHTML += `Masih kecil usianya, usia = ${usia}`
+        }
+
+        run.innerHTML += "<hr>"
+
+      </script>
+      <hr>
+      <br>
+
+
+
+   </div>
+  </div>
+ </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
