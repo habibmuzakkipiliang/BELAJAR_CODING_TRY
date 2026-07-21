@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contoh Website Sederhana 1</title>
+</head>
+<style>
+     #img1 {
+          float: calc();
+          width: 350px;
+          height: 350px;
+     }
+
+     #img2 {
+          float: calc();
+          width: 350px;
+          height: 350px;
+     }
+
+     .header {
+          line-height: 2.5em;
+          font-size: medium;
+          font-family:  sans-serif;
+     }
+
+     .body {
+          line-height: 2.5em;
+          font-size: medium;
+          font-family: sans-serif;
+     }
+</style>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<body class="body bg-success text-black">
+     <header class="header p-5 mb-5 h-100 bg-info text-black">
+          <h1 class="text-center">Contoh Website Sederhana</h1>
+     </header>
+
+     <div class="container">
+          <div class="row">
+               <div class="col-sm-12 bg-white text-black">
+
+                    <div class="card">
+                         <img src="https://raw.githubusercontent.com/habibmuzakkipiliang/HM_Initial_Profile_Github/refs/heads/main/HM_Profile_Github.png" alt="Gambar-1" id="img1" class="img-fluid img-thumbnail">
+                         <br>
+
+                         <div class="card-title"><h2>Profil Habib Muzakki</h2></div>
+
+                         <div class="card-body">
+                              <table class="table table-responsive table-hover table-bordered border-3 border-black">
+                                   <tr>
+                                        <td>Nama lengkap</td>
+                                        <td>Habib Muzakki</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Nama panggilan</td>
+                                        <td>Habib</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Asal</td>
+                                        <td>Kota Serang</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Coding</td>
+                                        <td>HTML, CSS, JavaScript dan Python</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Kuliah</td>
+                                        <td>Universitas Harkat Negeri Tegal</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Jurusan</td>
+                                        <td>D4 Vokasi Teknik Informatika</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Alumni</td>
+                                        <td>MAN 2 KOTA SERANG (JURUSAN AGAMA)</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Game</td>
+                                        <td>Minecraft dan Warplane WW2</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Tinggi badan</td>
+                                        <td>170 cm</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Berat badan</td>
+                                        <td>60 kg</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Calon</td>
+                                        <td>Web Development dan Bug Hunter</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Divisi</td>
+                                        <td>Front End dan Full Stack Junior</td>
+                                   </tr>
+                                   <tr>
+                                        <td>Hobi</td>
+                                        <td>Wota, Ngoding </td>
+                                   </tr>
+                              </table>
+                              <hr>
+                              <br>
+
+
+                              <h2>Formulir sederhana</h2>
+
+                              <form action="">
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Nama lengkap :</label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Nama panggilan :</label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Asal daerah :</label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Tanggal lahir :</label>
+                                        <input type="date" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Tempat lahir :</label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Zodiak :</label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Hobi : </label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <hr>
+                                   <div class="mb-5">
+                                        <button type="reset" class="btn btn-dark">Hapus</button>
+                                        <button type="submit" class="btn btn-info">Kirim</button>
+                                   </div>
+                              </form>
+                              <hr>
+                              <br>
+
+
+                              <h2>Login sederhana</h2>
+
+                              <form action="get">
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Email</label>
+                                        <input type="email" name="" id="" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Username :</label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb=5">
+                                        <label for="" class="form-label">Password :</label>
+                                        <input type="password" name="" id="" class="form-control" required>
+                                   </div>
+                                   <hr>
+                                   <div class="mb-5">
+                                        <button type="reset" class="btn btn-dark">Hapus</button>
+                                        <button type="submit" class="btn btn-info">Kirim</button>
+                                   </div>
+                              </form>
+                              <hr>
+
+                              <h2>Data Formulir Masuk Kuliah</h2>
+
+                              <form action="">
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">
+                                             Nama lengkap :
+                                        </label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">
+                                             Nama panggilan :
+                                        </label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">
+                                             Asal daerah (Domisili) :
+                                        </label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">Jurusan :</label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">
+                                             Kampus :
+                                        </label>
+                                        <input type="text" class="form-control" required>
+                                   </div>
+                                   <div class="mb-5">
+                                        <label for="" class="form-label">
+                                             Tanggal lahir :
+                                        </label>
+                                        <input type="date" name="" id="" class="form-control" required>
+                                   </div>
+                                   <hr>
+                                   <div class="mb-5">
+                                        <button type="reset" class="btn btn-dark">Hapus</button>
+                                        <button type="submit" class="btn btn-info">Kirim</button>
+                                   </div>
+                              </form>
+                              <hr>
+
+
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
