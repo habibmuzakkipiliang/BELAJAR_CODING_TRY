@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Belajar DOM JavaScript</title>
+</head>
+
+<style>
+ .body {
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: aqua;
+  color: black;
+  line-height: 3.5em;
+ }
+
+ .header {
+  line-height: 3.5em;
+  font-size: medium;
+  font-family: sans-serif;
+  background-color: yellow;
+  color: black;
+ }
+
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<body class="body">
+ <header class="header p-5 mb-5">
+  <h1 align="center">Belajar DOM JavaScript</h1>
+ </header>
+
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12" style="background-color: white;">
+
+    <p style="font-size: larger;">
+     ayo belajar JavaScript DOM dengan santai
+    </p>
+
+    <div id="teks_12"></div>
+    <div id="judul_12"></div>
+
+    <script>
+     var judul_12 = document.getElementById ("judul_12")
+     var teks_12 = document.getElementById ("teks_12")
+
+     judul_12.innerHTML += "<h2> Profil Habib Muzakki </h2>"
+
+     var nama = "Habib Muzakki"
+     var kelas = "12 Agama"
+     var absen = 12
+     var coding = "HTML, CSS, JavaScript dan Python"
+     var sekolah = "MAN 2 KOTA SERANG"
+     var tinggi = "170 cm"
+     var berat = "60 kg"
+     var lomba = "Finalis OSN-K Informatika tahun 2025"
+
+     var detail_oke = `
+     <br>- Nama : ${nama}
+     <br>- Kelas : ${kelas}
+     <br>- Absen : ${absen}
+     <br>- Coding : ${coding}
+     <br>- Sekolah : ${sekolah}
+     <br>- Tinggi badan : ${tinggi}
+     <br>- Berat badan : ${berat}
+     <br>- Lomba : ${lomba}
+     
+     `
+     document.write (detail_oke)
+
+     teks_12.innerHTML += "aku lagi belajar DOM Guys"
+
+     document.write ("<hr>")
+
+    </script>
+
+    <div id="teks"></div>
+    <div id="judul"></div>
+
+    <script>
+     var judul = document.getElementById ("judul")
+     var teks = document.getElementById ("teks")
+
+     var nilai = 90
+     var cek = true
+     
+    judul.innerHTML += "<h2> Percabangan Nested </h2>"
+
+     if (cek) {
+      if (nilai > 50) {
+       teks.innerHTML += `Besar, nilai = ${nilai}`
+      }
+
+      else if (nilai < 50) {
+       teks.innerHTML += `Kecil, nilai = ${nilai}`
+      }
+     }
+
+     else {
+      teks.innerHTML += `Sama saja, nilai = ${nilai}`
+     }
+
+    </script>
+    <hr>
+
+    <div id="judul_4"></div>
+    <div id="teks_4"></div>
+
+    <script>
+     var judul_4 = document.getElementById ("judul_4")
+     var teks_4 = document.getElementById ("teks_4")
+
+     judul_4.innerHTML += "<h2> Percabangan Nested, usia produktif manusia </h2>"
+
+     var usia = 19
+     var cek = true
+
+     if (cek) {
+      if ((usia >= 15) && (usia <= 64)) {
+       teks_4.innerHTML += `Sudah mencapai usia produktif, usia = ${usia}`
+      }
+
+      else if (usia > 64) {
+       teks_4.innerHTML += `Sudah lanjut usia, usia = ${usia}`
+      }
+
+      else {
+       teks_4.innerHTML += `Belum masuk usia produktif, usia = ${usia}`
+      }
+     }
+
+     else {
+      teks_4.innerHTML += `Masih kecil usianya, usia = ${usia}`
+     }
+
+     teks_4.innerHTML += "<hr>"
+    </script>
+
+
+    <div id="teks_1"></div>
+    <div id="judul_1"></div>
+    <script>
+
+     var judul_1 = document.getElementById ("judul_1")
+     var teks_1 = document.getElementById ("teks_1")
+
+     var nilai_1 = 20
+     var cek_1 = true
+
+     judul.innerHTML += "<h2> Percabangan Dasar </h2>"
+
+     if (nilai_1 > 50) {
+      teks_1.innerHTML += `Besar, nilai = ${nilai_1}`
+     }
+
+     else {
+      teks_1.innerHTML += `Kecil, nilai = ${nilai_1}`
+     }
+    </script>
+
+    <div id="coba_sekarang"></div>
+    <script>
+
+     document.write ("<h2> Latihan DOM JAVASCRIPT </h2>")
+
+     var coba_sekarang = document.getElementById ("coba_sekarang")
+     
+     coba_sekarang.innerHTML += "Tes Sekarang"
+
+     coba_sekarang.style.backgroundColor = "gold"
+     coba_sekarang.style.padding = "10px"
+     coba_sekarang.style.display = "inline-block"
+
+    </script>
+    <hr>
+    <br>
+
+    <div id="coba"></div>
+    <script>
+     document.write ("<h2> Latihan DOM JAVASCRIPT </h2>")
+
+     var coba = document.getElementById ("coba")
+
+     coba.innerHTML = "Ayo Belajar JavaScript"
+
+     coba.style.font = "12px"
+     coba.style.backgroundColor = "red"
+     coba.style.margin = "12px"
+    </script>
+    <hr>
+    <hr>
+    <br>
+
+
+    <div id="judul_up"></div>
+    <div id="tes_up"></div>
+
+    <script>
+     var tes = document.getElementById ("judul_up")
+     var ar = document.getElementById ("tes_up")
+
+     judul_up.innerHTML += "<h2> Percabangan dasar </h2>"
+
+     var a = 9
+
+     if (a > 5) {
+      tes_up.innerHTML += `Besar, nilai = ${a}`
+     }
+
+     else {
+      tes_up.innerHTML += `Kecil, nilai = ${a}`
+     }
+
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="a_1"></div>
+    <div id="b_2"></div>
+    <script>
+     var soft= document.getElementById ("a_1")
+     var hard = document.getElementById ("b_2")
+
+     a_1.innerHTML += "<h2> Percabangan dasar 2 </h2>"
+
+     var b = 3
+
+     if (b > 5) {
+      b_2.innerHTML += `Besar, nilai = ${b}`
+     }
+
+     else {
+      b_2.innerHTML += `Kecil, nilai = ${b}`
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="clan"></div>
+    <div id="node"></div>
+
+    <script>
+     var tes = document.getElementById ("clan")
+     var tes = document.getElementById ("node")
+
+     clan.innerHTML += "<h2> Percabangan lanjutan  </h2>"
+
+     var c = 10
+
+     if (c > 5) {
+      node.innerHTML += `Besar, nilai = ${c}`
+     }
+
+     else if (c < 5) {
+      node.innerHTML += `Kecil, nilai = ${c}`
+     }
+     
+     else {
+      node.innerHTML += `Sama saja, nilai = ${c}`
+     }
+
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="gun"></div>
+    <div id="dub"></div>
+
+    <script>
+     var gur = document.getElementById ("gun")
+     var gur = document.getElementById ("dub")
+
+     gun.innerHTML += "<h2> Percabangan Nested 1 </h2>"
+
+     var a = 10
+     var cek = true
+
+     if (cek) {
+      if (a > 5) {
+       dub.innerHTML += `Besar, nilai = ${a}`
+      }
+
+      else if (a < 5) {
+       dub.innerHTML += `Kecil, nilai = ${a}`
+      }
+     }
+
+     else {
+      dub.innerHTML += `Sama saja, nilai = ${a}`
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="tune"></div>
+    <div id="rus"></div>
+
+    <script>
+     var tes = document.getElementById ("tune")
+     var tes = document.getElementById ("rus")
+
+     tune.innerHTML += "<h2> Percabangan Nested 2 </h2>"
+
+     var f = 2
+     var cek = true
+
+     if (cek) {
+      if (f > 5) {
+       rus.innerHTML += `Besar, nilai = ${f}`
+      } 
+      
+      else {
+       rus.innerHTML += `Kecil, nilai = ${f}`
+      }
+     }
+
+     else {
+      rus.innerHTML += `Sama saja, nilai = ${f}`
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="fun"></div>
+    <div id="run"></div>
+
+    <script>
+        var tes = document.getElementById ("fun")
+        var tes = document.getElementById ("run")
+
+        run.innerHTML += "<h2> Percabangan Nested 1, Usia Produktif Manusia"
+
+        var usia = 19
+        var cek = true
+
+        if (cek) {
+            if ((usia >= 15) && (usia <= 64)) {
+                run.innerHTML += `Sudah mencapai usia produktif, usia = ${usia}`
+            }
+
+            else if (usia > 64) {
+                run.innerHTML += `Sudah lanjut usia, usia = ${usia}`
+            }
+
+            else {
+                run.innerHTML += `Belum mencapai usia produktif, usia = ${usia}`
+            }
+        }
+
+        else {
+            run.innerHTML += `Masih kecil usianya, usia = ${usia}`
+        }
+
+        run.innerHTML += "<hr>"
+
+      </script>
+      <hr>
+      <br>
+
+
+   </div>
+  </div>
+ </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
