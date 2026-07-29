@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Logika Pemrograman Dasar (HTML, CSS, JavaScript) DOM JavaScript</title>
+</head>
+
+<style>
+ .body {
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: aqua;
+  color: black;
+  line-height: 3.5em;
+ }
+
+ .header {
+  font-family: sans-serif;
+  background-color: yellow;
+  color: black;
+  line-height: 3.5em;
+ }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<body class="body">
+ <header class="header mb-5 p-5">
+  <h1 align="center">
+   Logika Pemrograman Dasar (HTML, CSS, JavaScript) DOM JavaScript
+  </h1>
+ </header>
+
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12" style="background-color: white;">
+    <img src="https://habibmuzakkipiliang.github.io/website_portofolio/Leonardo_Phoenix_Design_a_cuttingedge_logo_for_HM_that_embodie_0.jpg" alt="gambar-habib-muzakki-piliang" width="250px" height="250px" class="img-fluid img-thumbnail rounded-circle rounded-5">
+    <br><br>
+
+    <div id="teks"></div>
+    <div id="judul"></div>
+    <script>
+     var don = document.getElementById ("teks")
+     var don = document.getElementById ("judul")
+
+     judul.innerHTML += "<h2> Profil Habib Muzakki Piliang </h2>"
+     teks.innerHTML  += "<h4> Latihan dulu JavaScript DOM </h4>"
+
+     var nama = "Habib Muzakki"
+     var panggil = "Habib"
+     var kelas = "12 Agama"
+     var asal = "Bukittinggi, Sumatra Barat"
+     var tinggal = "Kota Serang, Banten"
+     var sekolah = "MAN 2 KOTA SERANG"
+     var absen = "15"
+     var angkatan = "34 ASCENDRIA 2026"
+     var tinggi = "170 cm"
+     var berat = "60 kg"
+     var darah = "B"
+     var coding = "HTML, CSS, JavaScript dan Python"
+     var lomba = "Finalis OSN-K Informatika tahun 2025"
+
+
+     var profil = `
+     <br>- Nama    : ${nama}
+     <br>- Panggil : ${panggil}
+     <br>- Kelas   : ${kelas}
+     <br>- Asal    : ${asal}
+     <br>- Tinggal : ${tinggal}
+     <br>- Sekolah : ${sekolah}
+     <br>- Absen   : ${absen}
+     <br>- Angkatan : ${angkatan}
+     <br>- Tinggi badan : ${tinggi}
+     <br>- Berat badan : ${berat}
+     <br>- Golongan darah : ${darah}
+     <br>- Coding : ${coding}
+     <br>- Lomba  : ${lomba}
+     
+     `
+
+     document.write (profil)
+
+    </script>
+    <hr>
+    <br>
+
+    <script>
+     document.write ("<h2> Tipe data Pemrograman </h2>")
+
+     var teks = "Halo Indonesia"
+     var angka = 23
+     var desimal = 34
+     var huruf = 'A'
+     var cek = true
+     var kosong = null 
+     var array = [
+     
+     "<br> 1. Bukittinggi",
+     "<br> 2. Padang",
+     "<br> 3. Payakumbuh",
+     "<br> 4. Sijunjung",
+     "<br> 5. Sitiung",
+     "<br> 6. Padang Panjang",
+     "<br> 7. Silaut",
+     "<br> 8. Solok",
+     "<br> 9. Batusangkar",
+     "<br> 10. Tanah Datar",
+     
+     ]
+
+     document.write ("<br> Teks : ", teks)
+     document.write ("<br> Angka : ", angka)
+     document.write ("<br> Desimal : ", desimal)
+     document.write ("<br> Huruf : ", huruf)
+     document.write ("<br> Cek : ", cek)
+     document.write ("<br> Kosong : ", kosong)
+     document.write ("<br> Array : ")
+
+     for (a = 0; a < array.length; a++) {
+      document.write (array [a])
+     }
+
+     document.write ("<hr>")
+
+
+     document.write ("<br> <h2> Dictionary </h2>")
+
+     var data = {
+      "nama" : "Oscar John Lock",
+      "asal" : "Amerika Serikat",
+      "kerja" : "Programmer",
+      "usia" : "25 tahun",
+      "coding" : "HTML, CSS, JavaScript dan Python",
+     }
+
+     document.write ("<br> Nama : ", data ["nama"])
+     
+     document.write ("<br> Asal : ", data ["asal"])
+
+     document.write ("<br> Kerja : ", data ["kerja"])
+
+     document.write ("<br> Usia : ", data ["usia"])
+
+     document.write ("<br> Coding : ", data ["coding"])
+
+    </script>
+    <hr>
+    <br>
+
+
+    <script>
+     document.write ("<h2> Operator Dasar </h2>")
+
+     var x = 40
+     var y = 2
+
+     document.write ("<br> Tambah = ", x + y)
+     document.write ("<br> Kurang = ", x - y)
+     document.write ("<br> Kali = ", x * y)
+     document.write ("<br> Pangkat = ", x ** y)
+     document.write ("<br> Bagi = ", x / y)
+     document.write ("<br> Modulus = ", x % y)
+
+     document.write ("<hr>")
+
+
+     document.write ("<br> <h2> Operator Perbandingan </h2>")
+
+     document.write ("<br> Hasil = ", x > y)
+     document.write ("<br> Hasil = ", x < y)
+     document.write ("<br> Hasil = ", x <= y)
+     document.write ("<br> Hasil = ", x >= y)
+     document.write ("<br> Hasil = ", x == y)
+     document.write ("<br> Hasil = ", x != y)
+
+     document.write ("<hr>")
+
+
+     document.write ("<br> <h2> Operator Logika </h2>")
+
+     document.write ("<br> Hasil = ", (x > y) && (x < y))
+     document.write ("<br> Hasil = ", (x < y) || (x > y))
+     document.write ("<br> Hasil = ", (!x))
+     document.write ("<br> Hasil = ", (!y))
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="leer"></div>
+    <div id="on"></div>
+    <script>
+     var cek = document.getElementById ("leer")
+
+     document.write ("<h2> Percabangan Dasar </h2>")
+
+     var a = 9
+
+     if (a > 5) {
+      leer.innerHTML += `<br> Besar, a = ${a}`
+     }
+
+     else {
+      leer.innerHTML += `<br> Kecil, a = ${a}`
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="hun"></div>
+    <script>
+     var cek = document.getElementById ("hun")
+
+     document.write ("<h2> Percabangan Lanjutan </h2>")
+
+     var b = 3
+
+     if (b > 5) {
+      hun.innerHTML += `Besar, b = ${b}`
+     }
+
+     else if (b < 5) {
+      hun.innerHTML += `Kecil, b = ${b}`
+     }
+
+     else {
+      hun.innerHTML += `Sama saja, b = ${b}`
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="gun"></div>
+    <script>
+     var cek = document.getElementById ("gun")
+
+     document.write ("<h2> Percabangan Nested 1 </h2>")
+
+     var n = 9
+     var cek = true
+
+     if (cek) {
+      if (n > 5) {
+       gun.innerHTML += `Besar, n = ${n}`
+      }
+
+      else if (n < 5) {
+       gun.innerHTML += `Kecil, n = ${n}`
+      }
+     }
+
+     else {
+      gun.innerHTML += `Sama saja, n = ${n}`
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <div id="un"></div>
+    <script>
+     var cek = document.getElementById ("un")
+     
+     document.write ("<h2> Percabangan Nested 2 </h2>")
+
+     var k = 3
+     var cek = true
+
+     if (cek) {
+      if (k > 5) {
+       un.innerHTML += `Besar, k = ${k}`
+      }
+
+      else {
+       un.innerHTML += `Kecil, k = ${k}`
+      }
+     }
+
+     else {
+      un.innerHTML += `Sama saja, k = ${k}`
+     }
+    </script>
+    <hr>
+    <br>
+
+    <script>
+
+     document.write ("<h2> For dasar </h2>")
+      
+     for (a = 0; a < 11; a++) {
+      document.write (`<br> Urutan ke - ${a}`)
+     }
+
+     document.write ("<hr>")
+
+
+     for (b = 0; b < 21; b++) {
+      document.write (`<br> Urutan ke - ${b}`)
+     }
+    </script>
+    <hr>
+    <br>
+
+
+    <script>
+     document.write ("<h2> While dasar </h2>")
+
+     var f = 10
+
+     while (f < 21) {
+      document.write (`<br> Urutan ke - ${f}`)
+      f++
+     }
+
+     document.write ("<hr>")
+
+
+     var e = 30
+
+     while (e < 41) {
+      document.write (`<br> Urutan ke - ${e}`)
+      e++
+     }
+
+    </script>
+    <hr>
+    <br>
+
+
+    <script>
+     document.write ("<h2> Do While </h2>")
+
+     var w = 5
+
+     do {
+      document.write (`<br> Urutan ke - ${w}`)
+      w++
+     } while (w < 11)
+
+     document.write ("<hr>")
+
+
+     var o = 10
+
+     do {
+      document.write (`<br> Urutan ke - ${o}`)
+      o++
+     } while (o < 26)
+
+    </script>
+    <hr>
+    <br>
+
+
+    <script>
+     document.write ("<h2> For Nested </h2>")
+
+     for (a = 0; a < 5; a++) {
+      for (b = 0; b < 5; b++) {
+       for (c = 0; c < 5; c++) {
+        document.write (`<br> Urutan ke - ${a}, urutan ke - ${b}, urutan ke - ${c}`)
+       }
+      }
+     }
+
+     document.write ("<hr>")
+
+
+     for (x = 0; x < 6; x++) {
+      for (y = 0; y < 6; y++) {
+       for (z = 0; z < 6; z++) {
+        document.write (`<br> Urutan ke - ${x}, urutan ke -${y}, urutan ke - ${z}`)
+       }
+      }
+     }
+
+    </script>
+    <hr>
+    <br>
+
+   </div>
+  </div>
+ </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
