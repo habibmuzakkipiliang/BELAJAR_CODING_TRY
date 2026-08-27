@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>JavaScript Latihan</title>
+</head>
+<style>
+     .body {
+          font-family: sans-serif;
+          font-size: medium;
+          background-color: chartreuse;
+          color: black;
+          line-height: 3.5em;
+     }
+
+     .header {
+          font-family: sans-serif;
+          font-size: medium;
+          line-height: 3.5em;
+     }
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<body class="body">
+     <header class="header p-5 h-100 mb-5 bg-info text-black">
+          <h1 class="text-center text-black h-100">
+               JavaScript Latihan 
+          </h1>
+     </header>
+
+     <div class="container">
+          <div class="row">
+               <div class="col-sm-12  bg-white text-black">
+
+                    <h3><b>Tipe Data Pemrograman</b></h3>
+
+                    <script>
+                         
+                         var teks = "Halo dunia"
+                         var angka = 12
+                         var desimal = 1.12
+                         var cek = true
+                         var kosong = null
+                         var undefine 
+
+                         var tipe = `
+                         <br> Teks     =  ${teks}
+                         <br> Angka    =  ${angka}
+                         <br> Desimal  = ${desimal}
+                         <br> Cek      = ${cek}
+                         <br> Kosong   = ${kosong}
+
+                         `
+
+                         document.write (tipe)
+
+                    </script>
+
+                    <hr>
+                    <br>
+
+                    <h3><b>Cek Jenis Tipe Data Pemrograman</b></h3>
+
+                    <script>
+
+                         var cek_tipe = `
+
+                         <br> teks_1 = ${typeof (teks)}
+                         <br> angka_1 = ${typeof (angka)}
+                         <br> desimal_1 = ${typeof (desimal)}
+                         <br> cek = ${typeof (cek)}
+                         <br> kosong = ${typeof (kosong)}
+
+                         `
+
+                         document.write (cek_tipe)
+                         
+                    </script>
+
+
+                    <hr>
+                    <br>
+
+                    <h3><b>Array 1</b></h3>
+
+                    <script>
+                         var daftar = [
+                              "<br> 1. Halo Dunia",
+                              "<br> 2. Halo Tes",
+                              "<br> 3. Halo Jun",
+                              "<br> 4. Halo Dundy"
+                         ]
+
+                         daftar.push ("<br> 5. Halo Dundok")
+                         daftar.push ("<br> 6. Halo Peter")
+                         daftar.push ("<br> 7. Halo Dunk")
+                         daftar.push ("<br> 8. Halo Hus")
+                         daftar.push ("<br> 9. Halo Hun")
+
+                         for (a = 0; a < daftar.length; a++) {
+                              document.write (daftar [a])
+                         }
+                    </script>
+
+                    <hr>
+                    <br>
+
+                    <h3><b>Fungsi + Variabel + Operasi JavaScript</b></h3>
+
+                    <script>
+
+                         var x = 10
+                         var y = 8
+
+                         function tambah (x, y) {
+                              return x + y
+                         }
+
+                         function kurang (x, y) {
+                              return x - y
+                         }
+
+                         function kali (x, y) {
+                              return x * y
+                         }
+
+
+                         function bagi (x, y) {
+                              return x / y
+                         }
+
+
+                         function pangkat (x, y) {
+                              return x ** y
+                         }
+
+
+                         var hasil = `
+
+                         <br> Hasil tambah  = ${tambah (x, y)}
+                         <br> Hasil kurang  = ${kurang (x, y)}           
+                         <br> Hasil kali    = ${kali (x, y)}
+                         <br> Hasil bagi    = ${bagi (x, y)}
+                         <br> Hasil pangkat = ${pangkat (x, y)}        
+                    
+                         `
+
+                         document.write (hasil)
+                    </script>
+
+                    <hr>
+                    <br>
+
+                    <h3><b>Variabel + Operasi Dasar JavaScript</b></h3>
+
+                    <script>
+                         
+                         var u = 10
+                         var z = 9
+
+                         var hasil_1 = `
+                         <br> Hasil tambah  =  ${x + y}
+                         <br> Hasil kurang  =  ${x - y}
+                         <br> Hasil kali    =  ${x * y}
+                         <br> Hasil pangkat =  ${x ** y}
+                         <br> Hasil bagi    =  ${x / y}
+                         `
+
+                         document.write (hasil_1)
+
+                    </script>
+               </div>
+          </div>
+     </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
